@@ -8,10 +8,10 @@
 
 # Solicitamos los siguientes datos al usuario
 precioCompra = float(input("Ingrese el monto de la compra:"))
-socio = input("Es socio? - Responda con Si o No")
+socio = input("Es socio? - Responda con Si o No: ")
 metodoPago = input("Elija el metodo de pago.\n1)Efectivo\n2)Transferencia\n3) Tarjeta en Cuotas")
 
-if str.lower(socio) == 'si':
+if socio.lower == 'si':
     # Si es socio le damos un descuento del 5%
     socioDescuento = 0.05
 else:
