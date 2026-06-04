@@ -29,7 +29,7 @@ for i in range(n):
     if i == 0:
         diaMayor = lluviaCaida
         diaMenor = lluviaCaida
-        
+
         numeroDiaMayor = i + 1
         numeroDiaMenor = i + 1
 

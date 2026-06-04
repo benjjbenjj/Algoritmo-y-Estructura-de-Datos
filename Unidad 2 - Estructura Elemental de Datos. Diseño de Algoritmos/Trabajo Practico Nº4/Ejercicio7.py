@@ -36,7 +36,7 @@ while notaAlumno >= 0:
         alumAprob = alumAprob + 1
     else:
         alumDesaprob = alumDesaprob + 1
-        
+
     if notaAlumno > notaAlta:
         notaAlta = notaAlumno
     
