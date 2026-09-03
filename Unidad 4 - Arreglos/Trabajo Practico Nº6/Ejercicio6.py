@@ -150,10 +150,10 @@ edadPromedio = sumadorEdad / n
 pesoPromedio = sumadorPeso / n
      
 print()
-print(f"Edad promedio de los pasajeros: {edadPromedio:.2f} a;os")
+print(f"Edad promedio de los pasajeros: {edadPromedio:.2f} años")
 print(f"Peso promedio de los equipajes: {pesoPromedio:.2f} kg")
-print(f"Cantidad de pasajeros menores a 18 a;os: {cantidadMenores}")
-print(f"Cantidad de pasajeros mayores o iguales a 60 a;os: {cantidadAdultosMayores}")
+print(f"Cantidad de pasajeros menores a 18 años: {cantidadMenores}")
+print(f"Cantidad de pasajeros mayores o iguales a 60 años: {cantidadAdultosMayores}")
 print()
 print(f"Pasajero que transporta el equipaje con mayor peso: {equipajeMayorPeso} kg")
 print(f"Edad del pasajero: {edadMayorPeso}")
@@ -188,26 +188,18 @@ print("---- Busqueda de pasajeros ----")
 print()
 solicEdad = int(input("Ingrese la edad para buscar pasajeros: "))
 
-edadCont = 0
+edadEncontrada = False
 
 for i in range(n): 
     
     if edades[i] == solicEdad:
         
-        edadCont = edadCont + 1
+        edadEncontrada = True
+        print(f"Numero del pasajero: {i + 1}")
+        print(f"Edad del pasajero: {edades[i]}")
+        print(f"Peso del equipaje: {equipajes[i]} kg")
+        print(f"Estado del equipaje: {estadoEquipaje[i]}")
 
-if edadCont == 0:
-    
+if not edadEncontrada:
+
     print("No se encontraron pasajeros con la edad indicada")
-    
-else:
-    
-    for i in range(n):
-        
-        if edades[i] == solicEdad:
-            
-            print(f"Numero del pasajero: {i + 1}")
-            print(f"Edad del pasajero: {edades[i]}")
-            print(f"Peso del equipaje: {equipajes[i]} kg")
-            print(f"Estado del equipaje: {estadoEquipaje[i]}")
-            
